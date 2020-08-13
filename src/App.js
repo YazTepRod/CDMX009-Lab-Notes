@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import SingIn from './components/SingIn';
+import SingUp from './components/SingUp';
+import Notes from './components/Notes';
+import { useFirebaseApp } from 'reactfire';
+import {  useUser } from 'reactfire';
+
+
 
 function App() {
+  const user = useUser();
+  const firebase = useFirebaseApp();
+  /* console.log(firebase); */
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      { user && <p>Usuario:{user.email}</p>}
+      <SingIn/>
+   <Router>
+    <div className="container">
+      <Switch>
+        <Route path="/singIn">
+          <SingIn />
+        </Route>
+        <Route path="/singUp">
+          <SingUp />
+        </Route>
+        <Route path="/notes">
+          <Notes />
+        </Route>
+      </Switch>
+    </div>
+    </Router>
     </div>
   );
 }
