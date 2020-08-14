@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import SingIn from './components/SingIn';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 import firebaseConfig from './firebase-config';
 import  { FirebaseAppProvider }  from 'reactfire'
@@ -9,7 +9,7 @@ import  { FirebaseAppProvider }  from 'reactfire'
 ReactDOM.render((
     <FirebaseAppProvider firebaseConfig= { firebaseConfig }>
     <Suspense fallback={<p>Cargando...</p>}>
-    <SingIn />
+    <App />
     </Suspense>
     </FirebaseAppProvider>
     ),

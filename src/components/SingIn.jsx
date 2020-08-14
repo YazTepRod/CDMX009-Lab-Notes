@@ -16,7 +16,7 @@ export default (props) => {
 
     const submit = async ()=>{
         await firebase.auth().createUserWithEmailAndPassword(email,password);
-       /*  console.log(email,password); */
+        console.log(email,password);
 }
 
 const login = async ()=>{
@@ -35,7 +35,7 @@ const login = async ()=>{
             <Container>
                 <Row>
             <Form>
-             <Col xs={12} sm={true} md={true} lg={9} xl={9} className='start'>
+             <Col xs={20} sm={20} md={20} lg={20} xl={20} className='start'>
             <Form.Group controlId="formBasicEmail">
 
               <Form.Control 
@@ -47,7 +47,7 @@ const login = async ()=>{
               </Form.Group>
                 
 
-             <Form.Group controlId="formBasicPassword">
+            <Form.Group controlId="formBasicPassword">
 
             <Form.Control 
             type="password" 
@@ -58,7 +58,7 @@ const login = async ()=>{
             </Form.Group>
             </Col>
 
-            <Col xs={12} sm={true} md={true} lg={true} xl={true} className='open'>
+            <Col xs={20} sm={20} md={20} lg={20} xl={20} className='open'>
             <Button 
             onClick={submit} 
             variant="primary"
