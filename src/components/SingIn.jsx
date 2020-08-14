@@ -35,7 +35,7 @@ const login = async ()=>{
             <Container>
                 <Row>
             <Form>
-             <Col xs={12} sm={9} md={9} lg={9} xl={9} className='start'>
+             <Col xs={12} sm={true} md={true} lg={9} xl={9} className='start'>
             <Form.Group controlId="formBasicEmail">
 
               <Form.Control 
@@ -58,7 +58,7 @@ const login = async ()=>{
             </Form.Group>
             </Col>
 
-            <Col xs={12} sm={true} md={9} lg={9} xl={9} className='open'>
+            <Col xs={12} sm={true} md={true} lg={true} xl={true} className='open'>
             <Button 
             onClick={submit} 
             variant="primary"
