@@ -1,0 +1,47 @@
+body{
+    background-color: #EFF19B;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40%;
+}
+
+.inputSingIn{
+ border-style: solid;
+ border-color: transparent;
+ color:#E0D934;
+ font-family: Handlee;
+ text-align: center;
+}
+
+.PassSingIn{
+    border-style: solid;
+    border-color: transparent;
+    color:#E0D934;
+    font-family: Handlee;
+    text-align: center;
+}
+
+.ButtonSingIn{
+    border-style: solid;
+    border-color: transparent;
+    background-color: #88D724;
+    color: black;
+    font-family: Handlee;
+    text-align: center;
+    width: 2cm;
+}
+
+.ButtonCreate{
+    border-style: solid;
+    background-color: #88D724;
+    border-color: transparent;
+    color: black;
+    font-family: Handlee;
+    text-align: center;
+    width: 4cm;
+
+
+}
+
+
+

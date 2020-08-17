@@ -1,0 +1,33 @@
+.socialNetworks{
+    font-size: 110%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.imgsSocialNetworks{
+    width: 65%;
+    margin-top: 15%;
+}
+
+.imgsSocialNetworks:hover{
+    width: 100px;
+
+}
+
+@media only screen and (max-width: 600px)  {
+    .imgsSocialNetworks:hover{
+        width: 90px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px)  {
+    .socialNetworks{
+        font-size: 150%;
+    }
+
+    .imgsSocialNetworks:hover{
+        width: 60%;
+    }
+}
