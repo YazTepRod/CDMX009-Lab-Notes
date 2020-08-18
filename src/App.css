@@ -3,11 +3,8 @@
 }
 
 .App-logo {
-<<<<<<< HEAD
   height: 40vmin;
   pointer-events: none;
-}
-=======
   height: 25vmin;
   pointer-events: none;
 }
@@ -18,7 +15,6 @@
   }
 }
 
->>>>>>> e05b26f4be5904110047981a7c05c7495f75daf0
 .App-header {
   background-color: #EFF19B;
   min-height: 100vh;
